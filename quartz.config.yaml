@@ -21,9 +21,9 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#fdfaf6"
+        light: "#faf8f8"
         lightgray: "#e5e5e5"
-        gray: "#8a8a8a"
+        gray: "#b8b8b8"
         darkgray: "#4e4e4e"
         dark: "#2b2b2b"
         secondary: "#284b63"
@@ -102,10 +102,6 @@ plugins:
   - source: github:quartz-community/hard-line-breaks
     enabled: true
     order: 90
-  - source: github:cat2151/quartz-transformer-mmlabc
-    enabled: true
-    options: {}
-    order: 95
   - source: github:quartz-community/ox-hugo
     enabled: false
     order: 91
