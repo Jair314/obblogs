@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"db054cf465637bad","type":"text","text":"第一个块","x":-320,"y":-120,"width":125,"height":60},
+		{"id":"c7a6c1d62fa548ee","x":-680,"y":40,"width":400,"height":400,"type":"file","file":"测试一下/代码测试.md"},
+		{"id":"d1232b6760861402","x":-180,"y":40,"width":400,"height":400,"type":"file","file":"测试一下/公式测试.md"},
+		{"id":"594cb43a5a8ea1fa","x":280,"y":40,"width":400,"height":400,"type":"file","file":"测试一下/白板测试.canvas"}
+	],
+	"edges":[
+		{"id":"31ef4600be7a5d40","fromNode":"db054cf465637bad","fromSide":"bottom","toNode":"c7a6c1d62fa548ee","toSide":"top"},
+		{"id":"d97f6a73fb907454","fromNode":"db054cf465637bad","fromSide":"bottom","toNode":"d1232b6760861402","toSide":"top"},
+		{"id":"646d13196086a253","fromNode":"db054cf465637bad","fromSide":"right","toNode":"594cb43a5a8ea1fa","toSide":"top"}
+	]
+}

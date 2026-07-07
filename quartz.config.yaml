@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Jair's Blogs
+  pageTitle: Quartz 5
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -41,6 +41,15 @@ configuration:
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#b3aa0288"
 plugins:
+  - source: github:quartz-community/latex
+    enabled: true
+    options:
+      renderEngine: mathjax
+    order: 3
+  - source: github:quartz-community/mathlinks
+    enabled: true
+    options: {}
+    order: 6
   - source: github:quartz-community/created-modified-date
     enabled: true
     options:
@@ -91,17 +100,16 @@ plugins:
   - source: github:quartz-community/description
     enabled: true
     order: 70
-  - source: github:quartz-community/latex
-    enabled: true
-    options:
-      renderEngine: mathjax
-    order: 80
   - source: github:quartz-community/citations
     enabled: false
     order: 85
   - source: github:quartz-community/hard-line-breaks
     enabled: true
     order: 90
+  - source: github:cat2151/quartz-transformer-mmlabc
+    enabled: true
+    options: {}
+    order: 95
   - source: github:quartz-community/ox-hugo
     enabled: false
     order: 91
