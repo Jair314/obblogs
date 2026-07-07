@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: Jair's Blogs
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: plausible
-  locale: en-US
+  locale: zh-CN
   baseUrl: Jair314.github.io
   ignorePatterns:
     - private
@@ -21,9 +21,9 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#faf8f8"
+        light: "#fdfaf6"
         lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
+        gray: "#8a8a8a"
         darkgray: "#4e4e4e"
         dark: "#2b2b2b"
         secondary: "#284b63"
@@ -94,7 +94,7 @@ plugins:
   - source: github:quartz-community/latex
     enabled: true
     options:
-      renderEngine: katex
+      renderEngine: mathjax
     order: 80
   - source: github:quartz-community/citations
     enabled: false
