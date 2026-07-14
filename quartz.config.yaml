@@ -28,8 +28,8 @@ configuration:
         dark: "#2b2b2b"
         secondary: "#284b63"
         tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#fff23688"
+        highlight: "#80caff"
+        textHighlight: "#fff236"
       darkMode:
         light: "#161618"
         lightgray: "#393639"
@@ -38,18 +38,14 @@ configuration:
         dark: "#ebebec"
         secondary: "#7b97aa"
         tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        highlight: "#49708c"
+        textHighlight: "#b3aa02"
 plugins:
   - source: github:quartz-community/latex
     enabled: true
     options:
       renderEngine: mathjax
     order: 3
-  - source: github:quartz-community/mathlinks
-    enabled: true
-    options: {}
-    order: 6
   - source: github:quartz-community/created-modified-date
     enabled: true
     options:
@@ -266,13 +262,13 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
-  - source:
-      name: quartz-themes
-      repo: github:saberzero1/quartz-themes
-      subdir: plugin
-    enabled: true
-    options:
-      theme: default
+  # - source:
+  #     name: quartz-themes
+  #     repo: github:saberzero1/quartz-themes
+  #     subdir: plugin
+  #   enabled: true
+  #   options:
+  #     theme: default
   - source: github:quartz-community/obsidian-plugin-excalidraw
     enabled: true
     options:

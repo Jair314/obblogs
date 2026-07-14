@@ -1,0 +1,55 @@
+/* 双链 - 彩色下划线 + 箭头 */
+a.internal-link {
+  color: var(--secondary, #284b63);
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+a.internal-link::after {
+  content: " →";
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+  transform: translateX(-5px);
+}
+
+a.internal-link:hover {
+  color: var(--dark, #2b2b2b);
+}
+
+a.internal-link:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* 下划线动画 */
+a.internal-link::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--secondary, #284b63);
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+
+a.internal-link:hover::before {
+  transform: scaleX(1);
+}
+
+/* 暗色模式 */
+.dark a.internal-link {
+  color: var(--secondary, #7b97aa);
+}
+
+.dark a.internal-link:hover {
+  color: var(--dark, #ebebec);
+}
+
+.dark a.internal-link::before {
+  background: var(--secondary, #7b97aa);
+}
